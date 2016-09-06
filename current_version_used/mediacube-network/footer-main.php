@@ -28,11 +28,11 @@
         </div>
         <div class="footer-partners">
             <span class="footer-socials__label"><?php _e('В партнерстве с', IO_THEME_NAME); ?>:</span>
-            <a href="http://google.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/google-logo.png"></a>
-            <a href="http://youtube.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/youtube-logo-light.png"></a>
-            <a href="http://www.epidemicsound.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/es-logo.png"></a>
-            <a href="https://pladform.ru/"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/plad-logo.png"></a>
-            <a href="https://www.tubebuddy.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tubebuddy_logo.png"></a>
+            <a href="http://google.com"><div class="footer-img-wrap google-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/google-logo.png"></div></a>
+            <a href="http://youtube.com"><div class="footer-img-wrap youtube-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/youtube-logo-light.png"></div></a>
+            <a href="http://www.epidemicsound.com/"><div class="footer-img-wrap es-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/es-logo.png"></div></a>
+            <a href="https://pladform.ru/"><div class="footer-img-wrap plad-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/plad-logo.png"></div></a>
+            <a href="https://www.tubebuddy.com/"><div class="footer-img-wrap buddy-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tubebuddy-logo.png"></div></a>
         </div>
     </div>
 </div>
