@@ -1,0 +1,127 @@
+{
+    "key": "group_5679142a19605",
+    "title": "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u0441\u0430\u0439\u0442\u0430",
+    "fields": [
+        {
+            "key": "field_5679153d7b775",
+            "label": "\u0421\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 \u0432\u0445\u043e\u0434 \u0432 \u043f\u0430\u043d\u0435\u043b\u044c \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f",
+            "name": "issa_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5679148e7b773",
+            "label": "\u0421\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 \u0430\u043a\u043a\u0430\u0443\u043d\u0442 \u0432 Facebook",
+            "name": "social_fb",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_567914dc7b774",
+            "label": "\u0421\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 \u0430\u043a\u043a\u0430\u0443\u043d\u0442 \u0432 \u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435",
+            "name": "social_vk",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_569554f79f73f",
+            "label": "\u0421\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 \u0430\u043a\u043a\u0430\u0443\u043d\u0442 \u0432 YouTube",
+            "name": "social_youtube",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_567916ae7b776",
+            "label": "\u0421\u0447\u0451\u0442\u0447\u0438\u043a\u0438",
+            "name": "counters",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_567eee780607f",
+            "label": "Email \u0434\u043b\u044f \u043f\u0438\u0441\u0435\u043c",
+            "name": "feedback_email",
+            "type": "email",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1452627205
+}

@@ -1,0 +1,116 @@
+msgid "Login"
+msgstr "Войти"
+
+msgid "We are in social networks"
+msgstr "Мы в социальных сетях"
+
+msgid "Subscribe"
+msgstr "Подпишись"
+
+msgid "Made in"
+msgstr "Сделано в"
+
+msgid "Joining Mediacube Network"
+msgstr "Подключение к Mediacube Network"
+
+msgid "We will hear you!"
+msgstr "Мы вас услышим"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "First Name"
+msgstr "Имя"
+
+msgid "Last Name"
+msgstr "Фамилия"
+
+msgid "Date of Birth"
+msgstr "Дата рождения"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Phone"
+msgstr "Номер телефона"
+
+msgid "How can we help you?"
+msgstr "Чем мы можем вам помочь?"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Link to your profile in social networks"
+msgstr "Ссылка на профиль в соцсети"
+
+msgid "Link to your YouTube-channel"
+msgstr "Ссылка на YouTube-канал"
+
+msgid "Field is obligatory"
+msgstr "Поле является обязательным"
+
+msgid "Field format is"
+msgstr "Формат поля"
+
+msgid "for example"
+msgstr "например"
+
+msgid "not obligatory"
+msgstr "необязательно"
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "Join"
+msgstr "Подключиться"
+
+msgid "Stay tuned!"
+msgstr "Оставайтесь в курсе"
+
+msgid "Twice a month, no spam"
+msgstr "2 раза в месяц, никакого спама"
+
+msgid "Subscribe now!"
+msgstr "Подписаться"
+
+msgid "Read more news on the topic"
+msgstr "Статьи по теме"
+
+msgid "New message from MediaCube Network website"
+msgstr "Новое сообщение с сайта MediaCube Network"
+
+msgid "Message sent!"
+msgstr "Сообщение отправлено!"
+
+msgid "Thank you for your message. We will respond as soon as we can."
+msgstr "Спасибо за ваше сообщение. Мы ответим как только сможем."
+
+msgid "New joining from MediaCube Network website"
+msgstr "Новое подключение с сайта MediaCube Network"
+
+msgid "Application sent!"
+msgstr "Заявка отправлена!"
+
+msgid "We will send you the result of your application by email within 3 working days."
+msgstr "Результаты рассмотрения заявки о вашем подключении мы отправим вам на email в течение 3 рабочих дней."
+
+msgid "Welcome to MediaCube Network!"
+msgstr "Добро пожаловать в MediaCube Network!"
+
+msgid "New subscription from MediaCube Network"
+msgstr "Новая подписка с сайта MediaCube Network"
+
+msgid "Subscribed!"
+msgstr "Подписка оформлена!"
+
+msgid "Thank you for your trust. We'll do our best not to disappoint you."
+msgstr "Спасибо за ваше доверие. Мы постараемся вас не разочаровать."
+
+msgid "Page is outdated, has been removed or never existed."
+msgstr "Страница устарела, была удалена или не существовала вовсе."
+
+msgid "Go to main page"
+msgstr "Перейти на главную"
+
+msgid "This section is empty"
+msgstr "Этот раздел пуст"
