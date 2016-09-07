@@ -5,6 +5,15 @@
     font-size: 36px;
 }
 
+.main-heading__inner {
+
+    left: 45px;
+}
+
+.authors_block .m-title {
+
+    padding-left: 45px;
+}
 .services-inner {
 
     background-image: url("http://mediacube.network/wp-content/uploads/2016/09/services-blue-bg-1.jpg");
@@ -44,9 +53,10 @@
     padding-top: 63px;
 }
 
-.how-it-works__inner {
+.how-it-works .m-title {
 
-    padding-top: 110px;
+    position: static;
+    padding-left: 45px;
 }
 
 .footer {

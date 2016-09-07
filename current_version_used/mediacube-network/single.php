@@ -1,13 +1,23 @@
 <?php get_header(); ?>
 
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/single.css">
+
 <?php if ( have_posts() ) : ?>
     <div class="main-heading __type-article">
         <div class="main-heading__outer">
             <div style="background-image: url(<?php the_field( 'image' ); ?>)" class="main-heading__bg"></div>
             <div class="main-heading__inner">
-                <h1 class="main-heading__title" id="single_heading">
-                    <small class="main-heading__cat"><?php io_the_category( false, true ); ?></small>
-                    <br><?php the_title(); ?></h1>
+
+                 <h2>
+                    <span class="outerwrap">
+                        <span class="small-cat"><?php io_the_category( false, true ); ?></span>
+                        <span class='spacer'></span>
+                        <br/>
+                        <span class='spacer'></span>
+                        <span class="big-title"><?php the_title(); ?></span>
+                    </span>
+                 </h2>
+
             </div>
         </div>
     </div>
@@ -29,11 +39,8 @@
             <a href="#" data-sharer="googleplus" data-url="<?php the_permalink(); ?>" class="article-social__item __type-gp sharer"></a>
             <a href="#" data-sharer="vk" data-url="<?php the_permalink(); ?>" class="article-social__item __type-vk sharer"></a>
         </div>
-        <div class="article-comments">
-            <?php comments_template(); ?>
-        </div>
         <div class="similar-articles">
-            <h2 class="m-title"><?php _e( 'Read more news on the topic', IO_THEME_NAME ); ?></h2>
+            <h2 class="m-title similar"><?php _e( 'Read more news on the topic', IO_THEME_NAME ); ?></h2>
 
             <ul class="articles-list">
                 <?php $related = get_field( 'related' ); ?>

@@ -1,0 +1,133 @@
+h2 {
+
+  margin-bottom: 0;
+}
+
+h2 span { 
+  color: white; 
+  font: 60px 'BebasNeue', sans-serif;
+  line-height: 75px;
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+.outerwrap {
+  padding: 20px; 
+  padding-top: 0;
+}
+
+h2 span.spacer {
+   padding:0 8px;
+   background: none;
+}
+
+.big-title {
+  background: none;
+  position: relative;
+  top: 12px;
+}
+
+.small-cat {
+  background: none;
+  font-size: 30px;
+  padding: 0;
+}
+
+.main-heading.__type-article .main-heading__inner {
+  max-width: 1200px;
+}
+
+.page {
+	background: #F7F7F7;
+  padding-bottom: 0;
+}
+
+.main-heading.__type-article .main-heading__bg {
+    opacity: 1;
+    filter: brightness(0.35);
+
+}
+
+.editor-content {
+    color: #000;
+}
+
+.main-heading.__type-article .main-heading__inner {
+    margin-left: 0;
+}
+
+.main-heading__inner {
+    left: 0;
+    top: 285px;
+}
+
+.blog-filters__list-item.__active .blog-filters__item {
+    background-color: #d42f27;
+}
+
+.blog-filters__item {
+
+    color: #000;
+}
+
+.articles-list__figure-img {
+
+  -webkit-filter: none;
+  filter: none;
+  -webkit-filter: none;
+  filter: none;
+  filter: none;  
+}
+
+.articles-list__title a {
+  color: #000;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.articles-list__item p {
+
+  font-weight: 400;
+  color: #000;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.articles-list__item:hover {
+
+  background-color: #A9251F;
+}
+
+.articles-list__item-meta a{
+    color: #000;
+    border-bottom: solid 1px #000;
+    font-weight: 400;
+}
+
+.articles-list__figure {
+
+  -webkit-box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.42);
+  box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.42);
+}
+
+.editor-content a, .editor-content a:hover {
+
+  color: #000;
+  font-weight: 400;
+  border-color: #000;
+}
+
+.editor-content a:hover {
+
+  color: #d42f27;
+  border-color: #d42f27;
+}
+
+.m-title.similar {
+
+  color: #000;
+}
+

@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/blog.css">
+
 <div class="main-heading"
      style="background-color: <?php the_field('bg_color', get_option('page_for_posts')) ?>;">
   <div class="main-heading__outer">

@@ -28,10 +28,10 @@
         <div class="top__inner">
             <?php if ( is_page_template('page-main.php') or is_front_page() ) : ?>
                 <!-- Logo-->
-                <span class="logo"><span class="logo-trade"></span><span class="logo-text"></span></span>
+                <span class="logo"><span class="logo-trade"></span><span class="logo-text">Mediacube Network</span></span>
             <?php else : ?>
                 <!-- Logo-->
-                <a href="/" class="logo"><span class="logo-trade"></span><span class="logo-text"></span></a>
+                <a href="/" class="logo"><span class="logo-trade"></span><span class="logo-text">Mediacube Network</span></a>
             <?php endif; ?>
             <!-- Single Partners-->
 
