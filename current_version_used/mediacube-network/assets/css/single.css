@@ -6,7 +6,6 @@
   margin-bottom: 60px;
 
 }
-
 .small-cat {
   background: #F11035;
   font-family: GothamPro-Medium;
@@ -19,6 +18,15 @@
   margin-bottom: 0;
 }
 
+#global-news {
+
+  background-color: #20b8be;
+}
+
+#news {
+  background-color: #17D463;
+}
+
 .abs_start {
 
   position: absolute;
@@ -28,7 +36,6 @@
 
 .rel_start {
   position: relative;
-  /*background-color: green;*/
   max-width: 650px;
   margin: 0 auto;
 }
@@ -123,6 +130,15 @@
 .m-title.similar {
 
   color: #000;
+}
+
+.editor-content img {
+    width: 100%;
+}
+
+a[href$="jpg"] {
+  margin: 0 auto;
+  border: none;
 }
 
 @media screen and (min-width: 1500px) {

@@ -18,7 +18,7 @@
 
     background-image: url("http://mediacube.network/wp-content/uploads/2016/09/services-blue-bg-1.jpg");
     background-size: cover;
-    height: 630px;
+    height: 100%;
     padding-top: 50px;
 }
 
@@ -26,13 +26,25 @@
 
     display: flex;
     margin: 0 0 40px 0;
+    padding: 0 45px;
+
 }
 
 .services-unit {
 
     display: inline-block;
     width: 450px;
-    margin: 0 auto;
+    margin-right: 100px
+}
+
+.services-unit:first-child {
+
+    margin-left: 0;
+}
+
+.services-unit:last-child {
+
+    margin-right: 0;
 }
 
 .service-title {

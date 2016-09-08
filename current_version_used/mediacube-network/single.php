@@ -7,7 +7,7 @@
             <div style="background-image: url(<?php the_field( 'image' ); ?>)" class="main-heading__bg"></div>
                 <div class="abs_start">
                     <div class="rel_start">
-                        <p class="small-cat"><?php io_the_category( false, true ); ?></p>
+                        <p class="small-cat" id="<?php $cat = get_the_category(); echo $cat[0]->slug; ?>"><?php io_the_category( false, true ); ?></p>
                         <h2 class="big-title"><?php the_title(); ?></h2>
                         <div class="stop-block"></div>
                     </div>
