@@ -4,22 +4,14 @@
 
 <?php if ( have_posts() ) : ?>
     <div class="main-heading __type-article">
-        <div class="main-heading__outer">
             <div style="background-image: url(<?php the_field( 'image' ); ?>)" class="main-heading__bg"></div>
-            <div class="main-heading__inner">
-
-                 <h2>
-                    <span class="outerwrap">
-                        <span class="small-cat"><?php io_the_category( false, true ); ?></span>
-                        <span class='spacer'></span>
-                        <br/>
-                        <span class='spacer'></span>
-                        <span class="big-title"><?php the_title(); ?></span>
-                    </span>
-                 </h2>
-
-            </div>
-        </div>
+                <div class="abs_start">
+                    <div class="rel_start">
+                        <p class="small-cat"><?php io_the_category( false, true ); ?></p>
+                        <h2 class="big-title"><?php the_title(); ?></h2>
+                        <div class="stop-block"></div>
+                    </div>
+                </div>
     </div>
     <div class="blog-article">
         <div class="editor-content">

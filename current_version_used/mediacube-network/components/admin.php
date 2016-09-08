@@ -73,7 +73,7 @@ function io_admin_init() {
     }
 }
 
-add_action( 'admin_init', 'io_admin_init' );
+// add_action( 'admin_init', 'io_admin_init' );
 
 /**
  * Remove unused toolbar items

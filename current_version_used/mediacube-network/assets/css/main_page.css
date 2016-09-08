@@ -2436,7 +2436,21 @@ input:focus {
 .footer-img-wrap.buddy-link:hover {
     background-image: url('../icons/tubebuddy-logo-clr.png');   
 }
-
+#preload1 {
+   background: url('../icons/google-logo-clr.png') no-repeat -9999px -9999px;
+}
+#preload2 {
+   background: url('../icons/youtube-logo-clr.png') no-repeat -9999px -9999px;
+}
+#preload3 {
+   background: url('../icons/es-logo-clr.png') no-repeat -9999px -9999px;
+}
+#preload4 {
+   background: url('../icons/plad-logo-clr.png') no-repeat -9999px -9999px;
+}
+#preload5 {
+   background: url('../icons/tubebuddy-logo-clr.png') no-repeat -9999px -9999px;
+}
 
 .footer-partners span{
     margin-right: 15px;

@@ -33,6 +33,11 @@
             <a href="http://www.epidemicsound.com/"><div class="footer-img-wrap es-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/es-logo.png"></div></a>
             <a href="https://pladform.ru/"><div class="footer-img-wrap plad-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/plad-logo.png"></div></a>
             <a href="https://www.tubebuddy.com/"><div class="footer-img-wrap buddy-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/tubebuddy-logo.png"></div></a>
+            <div id="preload1"></div>
+            <div id="preload2"></div> 
+            <div id="preload3"></div> 
+            <div id="preload4"></div> 
+            <div id="preload5"></div> 
         </div>
     </div>
 </div>

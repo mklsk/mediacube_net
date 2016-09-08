@@ -32,7 +32,7 @@ if (have_rows('content')):
                         <div class="service-row">
                             <?php $i = 0;
                                 while (have_rows('services')): the_row(); $i++; ?>
-                                    <?php if ( $i <= 2 ): ?>
+                                    <?php if ( $i <= 1 ): ?>
                                         <div class="services-unit">
                                             <img src="<?php the_sub_field('bg') ?>">
                                             <div class="service-title"><?php the_sub_field('title') ?></div>
