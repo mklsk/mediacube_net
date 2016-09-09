@@ -141,12 +141,24 @@ a[href$="jpg"] {
   border: none;
 }
 
+@media screen and (max-width: 680px)
+{
+  .footer {
+    display: none;
+  }
+  .subscribe-blog {
+    margin-left: -10px;
+      margin-right: -10px;
+  }
+  .rel_start {
+    margin: 0 12px;
+  }
+}
+
 @media screen and (min-width: 1500px) {
 
   .main-heading.__type-article { 
     height: 740px;
   }
-
-
 }
 

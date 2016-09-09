@@ -3927,6 +3927,15 @@ input:focus {
     max-width: 650px;
     margin: 38px auto 21px
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1050px)
+{
+    .navigation__item {
+        padding: 0 25px;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     .blog-filters__scene {
         padding: 0 29px;
@@ -3969,7 +3978,7 @@ input:focus {
         display: block
     }
     .top__inner {
-        padding-left: 20px
+        padding: 0 20px;
     }
     .type-brands-page .content,
     .type-contacts-page .content {
@@ -4131,7 +4140,8 @@ input:focus {
         font-size: 85px
     }
     .__open-navigation .navigation__inner {
-        visibility: visible
+        visibility: visible;
+        border-top: 1px solid #2d2d2e;
     }
     .__open-navigation .navigation__list-item {
         -webkit-transform: translate3d(0, 0, 0);
@@ -4171,7 +4181,7 @@ input:focus {
         font-size: 84px
     }
     .main-heading__inner {
-        left: 40px;
+        left: 20px;
         right: 40px;
         bottom: 28px
     }
@@ -4483,6 +4493,10 @@ input:focus {
     }
 }
 @media screen and (max-width: 680px) {
+
+    .top__inner {
+        padding-right: 0;
+    }
     .page {
         padding: 90px 10px 0
     }
@@ -4496,8 +4510,8 @@ input:focus {
     }
     .top {
         top: 10px;
-        left: 10px;
-        right: 10px;
+        left: 0;
+        right: 0;
     }
     .top.fixed {
         margin-top: -10px
@@ -4512,13 +4526,12 @@ input:focus {
         width: 30px;
         height: 34px;
         background-size: 30px 34px;
-        margin-top: 3px
     }
     .logo-text {
         display: inline-block;
         height: 34px;
         background-size: 60px 32px;
-        margin-top: 3px
+        margin-top: 5px
     }
     .navigation__inner {
         overflow: hidden
@@ -4651,10 +4664,7 @@ input:focus {
         top: auto
     }
     .main-heading__title {
-        position: absolute;
-        left: 30px;
-        top: 115px;
-        right: 30px;
+  
         font-size: 36px;
     }
     .__type-blog .main-heading__title {
@@ -4667,17 +4677,11 @@ input:focus {
         bottom: 28px;
         top: auto
     }
-    .main-heading__content {
-        position: absolute;
-        left: 30px;
-        right: 30px;
-        bottom: 25px
-    }
+ 
     .main-heading__inner {
-        position: static;
-        left: auto;
-        right: auto;
-        bottom: auto;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
     }
     .__type-blog .main-heading__inner {
         left: 40px;
@@ -5113,7 +5117,85 @@ input:focus {
         color: #7e8084;
         background: none
     }
+    .logo-trade {
+        width: 36px;
+        height: 40px;
+        background-size: 36px 40px;
+    }
 }
+
+@media screen and (max-width: 730px) {
+
+    .main-heading__title strong {
+        font: 400 140px/1 'GothamPro-Black', sans-serif;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .main-heading__title {
+        top: initial;
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .main-heading__title strong {
+        font: 400 120px/1 'GothamPro-Black', sans-serif;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-heading__title strong {
+        font: 400 100px/1 'GothamPro-Black', sans-serif;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-heading__title strong {
+        font: 400 80px/1 'GothamPro-Black', sans-serif;
+        letter-spacing: -8px;
+    }
+
+    .main-heading__inner {
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        margin-top: 25px;
+    }
+    .logo-text {
+        font-size: 19px;
+        width: 180px;
+        margin-top: 3px;
+    }
+    .logo-trade {
+        width: 28px;
+        height: 32px;
+        background-size: 28px 32px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .main-heading__title strong {
+            font: 400 70px/1 'GothamPro-Black', sans-serif;
+            letter-spacing: -6px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo-text {
+        font-size: 17px;
+        width: 160px;
+    }
+    .logo-trade {
+        width: 26px;
+        height: 30px;
+        background-size: 26px 30px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .main-enters__item:hover .main-enters__bg-p {
         opacity: 0;
