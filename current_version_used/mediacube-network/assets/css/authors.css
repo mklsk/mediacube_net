@@ -11,46 +11,30 @@
     padding-left: 45px;
 }
 
-
-#for_1024, #for_680 {
-
-    display: none;
-}
-
 .services-inner {
 
     background-image: url("http://mediacube.network/wp-content/uploads/2016/09/services-blue-bg-1.jpg");
     background-size: cover;
     height: 100%;
-    padding: 40px 0;
+    padding: 0 45px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
-.service-row {
+.service-wrap  {
 
     display: flex;
-    margin: 0 0 40px 0;
-    padding: 0 45px;
-}
-
-.service-row:last-child {
-    margin-bottom: 0;
 }
 
 .services-unit {
 
-    display: inline-block;
-    width: 25%;
-    margin-right: 100px
-}
-
-.services-unit:first-child {
-
-    margin-left: 0;
-}
-
-.services-unit:last-child {
-
-    margin-right: 0;
+    padding-right: 45px;
+    max-width: 450px;
+    min-width: 300px;
+    margin-top: 40px;
 }
 
 .service-title {
@@ -87,28 +71,40 @@
     padding-bottom: 0;
 }
 
+@media screen and (min-width: 1040px) and (max-width: 1440px)
+{
+    .services-unit {
+
+        max-width: 475px;
+    }
+}
 
 @media screen and (max-width: 1024px)
 {
-
-    .services-unit {
-        margin-right: 40px;
-        width: 40%;
-    }
-
-    #for_1500 {
-
-        display: none;
-    }
-
-    #for_1024 {
-        display: block;
-    }
 
     .how-it-works-slides__slide-inner {
 
     bottom: 180px;
     }
+
+    .services-inner {
+
+        justify-content: space-between;
+        padding: 0 20px;
+        padding-bottom: 40px;
+
+    }
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .services-unit {
+
+        padding-right: 0;
+        max-width: 750px;
+    }
+
 }
 
 
@@ -118,14 +114,6 @@
     .top {
     left: 0;
     right: 0;
-    }
-
-    #for_1024 {
-        display: none;
-    }
-
-    #for_680 {
-        display: block;
     }
 
     .page {
@@ -153,6 +141,10 @@
         margin-left: 0;
         margin-right: 0;
     }
+
+	.authors_block .m-title, .how-it-works .m-title {
+    	padding-left: 20px;
+	}
 }
 
 

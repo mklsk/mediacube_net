@@ -141,6 +141,18 @@ a[href$="jpg"] {
   border: none;
 }
 
+@media screen and (max-width: 1024px) {
+
+  .articles-list {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .m-title.similar {
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 680px)
 {
   .footer {
@@ -152,6 +164,9 @@ a[href$="jpg"] {
   }
   .rel_start {
     margin: 0 12px;
+  }
+  .articles-list {
+    padding-left: 0;
   }
 }
 

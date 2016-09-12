@@ -9,162 +9,21 @@ if (have_rows('content')):
                 <div class="list-services">
                     <h2 class="m-title"><?php the_sub_field('block_title'); ?></h2>
 
-                    <div class="services-inner" id="for_1500">
-                        <div class="service-row">
-                            <?php $i = 0;
-                                while (have_rows('services')): the_row(); $i++; ?>
-                                    <?php if ( $i <= 2 ): ?>
-                                    <div class="services-unit">
-                                        <img src="<?php the_sub_field('bg') ?>">
-                                        <div class="service-title"><?php the_sub_field('title') ?></div>
-                                        <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                    </div>
-                                    <?php else: ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                        <?php break; ?>
-                                    <?php endif ?>
-                            <?php endwhile; ?>
-                        </div>
-
-                        <div class="service-row">
-                            <?php $i = 0;
-                                while (have_rows('services')): the_row(); $i++; ?>
-                                    <?php if ( $i <= 2 ): ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                    <?php else: ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                        <?php break; ?>
-                                    <?php endif ?>
-                            <?php endwhile; ?>
-                        </div>
-
-                        <div class="service-row">
-                            <?php $i = 0;
-                                while (have_rows('services')): the_row(); $i++; ?>
-                                    <?php if ( $i <= 2 ): ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                    <?php else: ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                        <?php break; ?>
-                                    <?php endif ?>
-                            <?php endwhile; ?>
-                        </div>
-                    </div>
-
-                    <div class="services-inner" id="for_1024">
-                        <div class="service-row">
-                            <?php $i = 0;
-                                while (have_rows('services')): the_row(); $i++; ?>
-                                    <?php if ( $i <= 1 ): ?>
-                                    <div class="services-unit">
-                                        <img src="<?php the_sub_field('bg') ?>">
-                                        <div class="service-title"><?php the_sub_field('title') ?></div>
-                                        <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                    </div>
-                                    <?php else: ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                        <?php break; ?>
-                                    <?php endif ?>
-                            <?php endwhile; ?>
-                        </div>
-
-                        <div class="service-row">
-                            <?php $i = 0;
-                                while (have_rows('services')): the_row(); $i++; ?>
-                                    <?php if ( $i <= 1 ): ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                    <?php else: ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                        <?php break; ?>
-                                    <?php endif ?>
-                            <?php endwhile; ?>
-                        </div>
-
-                        <div class="service-row">
-                            <?php $i = 0;
-                                while (have_rows('services')): the_row(); $i++; ?>
-                                    <?php if ( $i <= 1 ): ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                    <?php else: ?>
-                                        <div class="services-unit">
-                                            <img src="<?php the_sub_field('bg') ?>">
-                                            <div class="service-title"><?php the_sub_field('title') ?></div>
-                                            <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                        </div>
-                                        <?php break; ?>
-                                    <?php endif ?>
-                            <?php endwhile; ?>
-                        </div>
-                   
-                        <div class="service-row">
-                                <?php $i = 0;
-                                    while (have_rows('services')): the_row(); $i++; ?>
-                                        <?php if ( $i <= 1 ): ?>
-                                            <div class="services-unit">
-                                                <img src="<?php the_sub_field('bg') ?>">
-                                                <div class="service-title"><?php the_sub_field('title') ?></div>
-                                                <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                            </div>
-                                        <?php else: ?>
-                                            <div class="services-unit">
-                                                <img src="<?php the_sub_field('bg') ?>">
-                                                <div class="service-title"><?php the_sub_field('title') ?></div>
-                                                <div class="service-descr"><?php the_sub_field('description') ?></div>
-                                            </div>
-                                            <?php break; ?>
-                                        <?php endif ?>
-                                <?php endwhile; ?>
-                        </div>
-                    </div>
-
+    
+                <div class="service-wrap">
                     <div class="services-inner" id="for_680">
                         <?php  $i = 0;
                             while (have_rows('services')): the_row(); $i++; ?>
-                               <div class="service-row">
+  
                                     <div class="services-unit">
                                         <img src="<?php the_sub_field('bg') ?>">
                                         <div class="service-title"><?php the_sub_field('title') ?></div>
                                         <div class="service-descr"><?php the_sub_field('description') ?></div>
                                     </div>
-                                </div>
+
                         <?php endwhile; ?>
                     </div>
+                </div>
 
 
                 </div>
