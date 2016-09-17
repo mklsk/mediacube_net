@@ -1,0 +1,76 @@
+html, body, .bottom {
+	width: 100%
+}
+
+body {
+
+	margin: 0;
+}
+
+.red_blocks {
+	
+	background-color: #ffffff;
+	height: 400px;
+	position: relative;
+}
+.red_rect {
+
+	background-color: #e91531;
+	position: absolute;
+}
+
+.red_rect:before{
+	content: "";
+	display: block;
+}
+
+.rects.one {
+	height: 600px;
+	width: 800px;
+	background: blue;
+}
+
+.red_rect.one {
+	width: 10%;
+	top: 50px;
+}
+.red_rect.one:before{
+
+	padding-top: 75%;
+}
+
+.red_rect.two {
+	width: 7%;
+	top: 30px;
+	left: 7%;
+}
+.red_rect.two:before{
+
+	padding-top: 60%;
+}
+
+.red_rect.three {
+	width: 10%;
+	top: 55px;
+	left: 12%;
+}
+.red_rect.three:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.four {
+	width: 12%;
+	top: 10px;
+	left: 17%;
+}
+.red_rect.four:before{
+
+	padding-top: 60%;
+}
+
+.search {
+	
+	background-color: green;
+	height: 400px;
+}
