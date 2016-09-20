@@ -3,16 +3,65 @@ html, body, .bottom {
 }
 
 body {
-
+	font-family: GothamPro-Light;
+	letter-spacing: -0.05em;
 	margin: 0;
+}
+
+p {
+	font-size: 30px;
 }
 
 .red_blocks {
 	
 	background-color: #ffffff;
-	height: 400px;
+	height: 800px;
 	position: relative;
 }
+
+.center_content {
+	margin: 0 auto;
+	position: relative;
+	top: 60px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+#why {
+	
+	font-weight: 200;
+	margin-bottom: 200px;
+}
+
+.img_text {
+	display: flex;
+	align-items: flex-start;
+}
+
+.img_text img {
+
+	width: 330px;
+}
+
+.img_text .two_texts {
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.img_text .two_texts h2 {
+	font-size: 60px;
+	width: 700px;
+	margin: 0;
+}
+
+.img_text .two_texts p {
+	width: 500px;
+}
+
 .red_rect {
 
 	background-color: #e91531;
@@ -31,8 +80,8 @@ body {
 }
 
 .red_rect.one {
-	width: 10%;
-	top: 50px;
+	width: 15%;
+	top: 60px;
 }
 .red_rect.one:before{
 
@@ -40,9 +89,9 @@ body {
 }
 
 .red_rect.two {
-	width: 7%;
+	width: 8%;
 	top: 30px;
-	left: 7%;
+	left: 12%;
 }
 .red_rect.two:before{
 
@@ -50,27 +99,401 @@ body {
 }
 
 .red_rect.three {
-	width: 10%;
+	width: 11%;
 	top: 55px;
-	left: 12%;
+	left: 18%;
 }
 .red_rect.three:before{
-
-	padding-top: 55%;
-}
-
-.red_rect.four {
-	width: 12%;
-	top: 10px;
-	left: 17%;
-}
-.red_rect.four:before{
 
 	padding-top: 60%;
 }
 
+.red_rect.four {
+	width: 14%;
+	top: 0;
+	left: 24%;
+}
+.red_rect.four:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.five {
+	width: 8%;
+	top: 80px;
+	right: 31%;
+}
+.red_rect.five:before{
+
+	padding-top: 55%;
+}
+.red_rect.six {
+	width: 22%;
+	top: 30px;
+	right: 0;
+}
+.red_rect.six:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.seven {
+	width: 10%;
+	top: 0;
+	right: 19%;
+}
+.red_rect.seven:before{
+
+	padding-top: 50%;
+}
+
+.red_rect.eight {
+	width: 10%;
+	bottom: 0;
+	left: 25%;
+}
+.red_rect.eight:before{
+
+	padding-top: 50%;
+}
+.red_rect.nine {
+	width: 14%;
+	bottom: 40px;
+	left: 13%;
+}
+.red_rect.nine:before{
+
+	padding-top: 55%;
+}
+.red_rect.ten {
+	width: 16%;
+	bottom: 120px;
+	left: 5%;
+}
+.red_rect.ten:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.eleven {
+	width: 7%;
+	bottom: 140px;
+	left: 24%;
+}
+.red_rect.eleven:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.twelve {
+	width: 16%;
+	bottom: 60px;
+	left: 42%;
+}
+.red_rect.twelve:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.thirteen {
+	width: 11%;
+	bottom: 15px;
+	left: 53%;
+}
+.red_rect.thirteen:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.fourteen {
+	width: 14%;
+	bottom: 80px;
+	right: 17%;
+}
+.red_rect.fourteen:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.fifteen {
+	width: 14%;
+	bottom: 160px;
+	right: 9%;
+}
+.red_rect.fifteen:before{
+
+	padding-top: 55%;
+}
+
+.red_rect.sixteen {
+	width: 10%;
+	bottom: 220px;
+	right: 4%;
+}
+.red_rect.sixteen:before{
+
+	padding-top: 55%;
+}
+
 .search {
 	
-	background-color: green;
-	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("brand_assets/hands_bg.jpg");
+	background-position: 0 -200px; 
+	height: 640px;
+}
+
+.search img {
+	width: 200px;
+}
+
+.content {
+	display: flex;
+	align-items: flex-start;
+}
+
+.search .bar {
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+.search .bar p {
+	color: #ffffff;
+	margin-top: 7px;
+}
+
+.search_bar {
+	display: flex;
+}
+
+.search_bar .fill {
+	width: 900px;
+	height: 55px;
+	background-color: #ffffff;
+	border: solid;
+	border-width: 2px;
+	border-color: #d4d4d4;
+	border-right: none;
+	display: flex;
+}
+
+.search_bar .fill p {
+	color: #000000;
+	font-size: 30px;
+	margin: auto 0 auto 10px;
+}
+
+.search_bar .button {
+	display: flex;
+	width: 130px;
+	height: 53px;
+	background-color: #f8f8f8;
+	border: solid;
+	border-width: 3px;
+	border-color: #d4d4d4;
+	border-radius: 5px;
+	margin-left: -5px;
+	margin-top: 0;
+}
+
+.search_bar .button img {
+	height: 40px;
+	width: auto;
+	margin: 3px auto;
+}
+
+
+.three.wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.three_sect {
+	width: 120%;
+	display: flex;
+	align-content: stretch;
+	height: 530px;
+	position: relative;
+	left: -10%;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+
+}
+
+.sect {
+	width: 40%;
+	transform: skewX(-20deg);
+	position: relative;
+
+}
+
+.sect.one {
+	background-color: #eeeeee;
+	padding-left: 10%;
+
+}
+.sect.two {
+	background-color: #e5e5e5;
+}
+.sect.three {
+	background-color: #dddddd;
+	padding-right: 10%;
+
+}
+
+.content_sect {
+	transform: skewX(20deg);
+	margin-top: 70px;
+}
+
+.content_sect h2 {
+	color: #ea1250;
+	font-family: GothamPro-Black;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+
+.content_sect p {
+	color: #666666;
+	font-family: GothamPro;
+	font-size: 36px;
+	margin-top: 5px;
+	width: 300px;
+}
+
+.sect.one .content_sect {
+	margin-left: 15%;
+}
+
+.sect.two .content_sect {
+	margin-left: 20%;
+}
+
+.sect.three .content_sect {
+	margin-left: 20%;
+}
+
+.sect.three .content_sect p {
+	width: 330px;
+}
+
+.users {
+
+	height: 700px;
+	color: #666666;
+	position: relative;
+	padding-right: 50px;
+}
+
+.users p {
+
+	margin-left: 300px;
+	font-size: 36px;
+
+}
+
+.buttons {
+
+
+	position: absolute;
+	right: 70px;
+	top: 250px;
+
+}
+
+.buttons .button_circle {
+
+	width: 24px;
+	height: 24px;
+	border: solid;
+	border-width: 3px;
+	border-radius: 50%;
+	border-color: #dddddd;
+	background-color: rgba(0,0,0,0);
+	margin-top: 24px;
+
+}
+
+.buttons .button_circle.active_button {
+
+	background-color: #dddddd;
+}
+
+
+
+
+
+.slide {
+	display: none;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 150px 0 auto;
+	font-family: GothamPro;
+}
+
+.stat_block {
+	display: flex;
+	flex-direction: column;
+	align-items: right;
+}
+
+.slide p {
+	margin-left: 0;
+}
+
+.stat_block {
+	margin: 0 150px;
+	position: relative;
+	top: 50px;
+}
+
+.stat_block p {
+	font-size: 48px;
+	margin-bottom: 0;
+}
+
+.stat_block h2 {
+	font-size: 144px;
+	margin-top: 15px;
+}
+
+#gender {
+
+	display: flex;
+}
+
+#age {
+
+
+	align-items: flex-end;
+	justify-content: space-around;
+}
+
+#educ {
+	align-items: flex-end;
+	justify-content: center;
+}
+
+#educ .person {
+	margin: 0 7%;
+}
+
+.person {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.person h3 {
+	font-size: 48px;
+	margin: 30px auto;
+	margin-bottom: 15px;
+}
+.person h2 {
+	font-size: 67px;
+	margin-top: 0;
 }
