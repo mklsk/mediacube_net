@@ -66,6 +66,18 @@ p {
 
 	background-color: #e91531;
 	position: absolute;
+
+  animation-name: block_save;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1.6s;
+
+   animation-name: block_fly;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+        transform: scale(0);
+
 }
 
 .red_rect:before{
@@ -83,8 +95,25 @@ p {
 	width: 15%;
 	top: 60px;
 }
-.red_rect.one:before{
 
+
+@keyframes block_fly {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+
+
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.red_rect.one:before{
+	
 	padding-top: 75%;
 }
 
@@ -497,3 +526,80 @@ p {
 	font-size: 67px;
 	margin-top: 0;
 }
+
+
+
+
+
+
+
+.red_rect.one {
+	animation-delay: 0.1s;
+}
+
+.red_rect.two {
+	animation-delay: 0.2s;
+}
+
+.red_rect.three {
+	animation-delay: 0.3s;
+}
+
+.red_rect.four {
+	animation-delay: 0.4s;
+}
+
+.red_rect.five {
+	animation-delay: 0.5s;
+}
+
+.red_rect.six {
+	animation-delay: 0.6s;
+}
+
+.red_rect.seven {
+	animation-delay: 0.7s;
+}
+
+.red_rect.eight {
+	animation-delay: 0.8s;
+}
+
+.red_rect.nine {
+	animation-delay: 0.9s;
+}
+
+.red_rect.ten {
+	animation-delay: 1s;
+}
+
+.red_rect.eleven {
+	animation-delay: 1.1s;
+}
+
+.red_rect.twelve {
+	animation-delay: 1.2s;
+}
+
+.red_rect.thirteen {
+	animation-delay: 1.3s;
+}
+
+.red_rect.fourteen {
+	animation-delay: 1.4s;
+}
+
+.red_rect.fifteen {
+	animation-delay: 1.5s;
+}
+
+.red_rect.sixteen {
+	animation-delay: 1.6s;
+}
+
+.red_rect_anim {
+	transform: scale(1) !important;
+
+}
+
+

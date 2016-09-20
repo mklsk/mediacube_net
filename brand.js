@@ -15,3 +15,16 @@ function currentDiv(n) {
 
     b[n-1].className += " active_button";
 }
+
+
+function animation_timer() {
+	var i;
+	var r = document.getElementsByClassName("red_rect");
+
+    for (i = 0; i < r.length; i++) {
+   			r[i].className += " red_rect_anim";
+
+       }
+}
+
+setTimeout(animation_timer, 1600);
