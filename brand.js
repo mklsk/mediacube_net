@@ -17,7 +17,7 @@ function currentDiv(n) {
 }
 
 
-function animation_timer() {
+function animation_timer() { //makes all rectangles not dissapear after animation
 	var i;
 	var r = document.getElementsByClassName("red_rect");
 
@@ -27,4 +27,27 @@ function animation_timer() {
        }
 }
 
-setTimeout(animation_timer, 1600);
+setTimeout(animation_timer, 1200);
+
+var exec = false;
+
+$(window).scroll(function(){
+
+	var from_top = $('body').scrollTop();
+	
+	
+	if (from_top > 200 && !exec)
+	{
+		exec = true;
+		$(function(){
+	      $(".fill_text").typed({
+	        strings: ["Вторая в мире поисковая система после Google"],
+	        typeSpeed: 30
+	      		});
+
+	  	});
+	}
+
+});
+
+
