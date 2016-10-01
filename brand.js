@@ -31,6 +31,7 @@ setTimeout(animation_timer, 1200);
 
 var exec = false;
 
+
 $(window).scroll(function(){
 
 	var from_top = $('body').scrollTop();
@@ -50,4 +51,4 @@ $(window).scroll(function(){
 
 });
 
-
+var s = skrollr.init();
