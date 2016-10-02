@@ -27,19 +27,15 @@ function animation_timer() { //makes all rectangles not dissapear after animatio
        }
 }
 
-setTimeout(animation_timer, 1200);
+setTimeout(animation_timer, 1000);
 
-var exec = false;
+var exec_type, exec_odo = false;
 
+var typing = new Waypoint.Inview({
 
-$(window).scroll(function(){
+	element: $('.search_bar'),
+	enter: function(direction){
 
-	var from_top = $('body').scrollTop();
-	
-	
-	if (from_top > 200 && !exec)
-	{
-		exec = true;
 		$(function(){
 	      $(".fill_text").typed({
 	        strings: ["Вторая в мире поисковая система после Google"],
@@ -47,8 +43,26 @@ $(window).scroll(function(){
 	      		});
 
 	  	});
+
+	  	typing.destroy();
+	}
+
+});
+
+var anim_nums = new Waypoint.Inview({
+
+	element: $('.content_sect'),
+	enter: function(direction){
+
+		$("#sixfour").html('64');
+		$("#twoseven").html('27');
+		$("#fournine").html('49');
+
+	  	anim_nums.destroy();
 	}
 
 });
 
 var s = skrollr.init();
+
+

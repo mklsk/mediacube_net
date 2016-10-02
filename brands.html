@@ -42,7 +42,7 @@
 	</div>
 
 	
-	<div class="search">
+	<div class="search" data-bottom-top="background-position: 0 -100px;" data-top-bottom="background-position: 0 -500px;">
 		<div class="content">
 			<img src="brand_assets/youtube_brands.png" alt="youtube logo">
 			<div class="bar">
@@ -64,19 +64,19 @@
 		<div class="three_sect">
 			<div class="sect one">
 				<div class="content_sect">
-					<h2>64%</h2>
+					<h2 class="odometer" id="sixfour"></h2><h2 class="percent">%</h2>
 					<p>Интернет пользователей посещают Youtube раз в месяц</p>
 				</div>
 			</div>
 			<div class="sect two">
 				<div class="content_sect">
-					<h2>27%</h2>
+					<h2 class="odometer" id="twoseven"></h2><h2 class="percent">%</h2>
 					<p>Интернет пользователей заходят на Youtube ежедневно</p>
 				</div>
 			</div>
 			<div class="sect three">
 				<div class="content_sect">
-					<h2>49%</h2>
+					<h2 class="odometer" id="fournine"></h2><h2 class="percent">%</h2>
 					<p> пользователей Youtube подписаны хотя бы на один канал</p>
 				</div>
 			</div>
@@ -148,10 +148,14 @@
 	</div>
 
 
-	<div class="parallax-window" data-parallax="scroll" data-image-src="hands_bg.jpg" data-z-index="1">
+	<div class="parallax-window" style="background: blue;">
 
 	</div>
 	<script src="assets/js/skrollr.js" ></script>
+	<link rel="stylesheet" href="assets/odometer-theme-my.css" />
+	<script src="assets/js/odometer.js" ></script>
+	<script src="assets/js/jquery.waypoints.js" ></script>
+	<script src="assets/js/inview.js" ></script>
 	<script src="brand.js"></script>
 </body>
 </html>
