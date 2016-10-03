@@ -6,7 +6,9 @@
 	<title>Brands page</title>
 	<link rel="stylesheet" href="brands_style.css">
 	<script src="assets/js/jquery.js"></script> <!-- DELETE IT -->
-	<script src="assets/js/typed.js"></script> <!-- CHANGE THIS TO A TRUE PATH -->
+	<script src="assets/js/typed.js"></script> 
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-my.css"/>
 </head>
 <body>
 	
@@ -82,73 +84,161 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="users_sect">
+	<p class="who">Кто они, пользователи Youtube?</p>
+		<div class="users">
 
-	<div class="users">
-		<p>Кто они, пользователи Youtube?</p>
-		<div class="buttons">
-			<div class="button_circle active_button" id="gen" onclick="currentDiv(1)"></div>
-			<div class="button_circle" id="ages" onclick="currentDiv(2)"></div>
-			<div class="button_circle" id="educat" onclick="currentDiv(3)"></div>
+			<div class="slide" id="gender">
+				<div class="stat_block">
+					<p>Мужчины</p>
+					<h2>47%</h2>
+				</div>
+				<img src="brand_assets/gender.png" alt="gender">
+				<div class="stat_block">
+					<p>Женщины</p>
+					<h2>53%</h2>
+				</div>
+			</div>
+			<div class="slide" id="age">
+				<div class="person" id="teen">
+					<img src="brand_assets/teen_usr.png" alt="teen">
+					<h3>18-24</h3>
+					<h2>22%</h2>
+				</div>
+				<div class="person" id="twenty">
+					<img src="brand_assets/twenty_usr.png" alt="twenty">
+					<h3>25-34</h3>
+					<h2>35%</h2>
+				</div>
+				<div class="person" id="thirty">
+					<img src="brand_assets/thirty_usr.png" alt="thirty">
+					<h3>35-44</h3>
+					<h2>20%</h2>
+				</div>
+				<div class="person" id="fourty">
+					<img src="brand_assets/fourty_usr.png" alt="fourty">
+					<h3>45-54</h3>
+					<h2>14%</h2>
+				</div>
+				<div class="person" id="fifty">
+					<img src="brand_assets/fifty_usr.png" alt="fifty">
+					<h3>55+</h3>
+					<h2>8%</h2>
+				</div>
+			</div>
+			<div class="slide" id="educ">
+				<div class="person" id="low">
+					<img src="brand_assets/low.png" alt="low">
+					<h3>Низкий</h3>
+					<h2>1%</h2>
+				</div>
+				<div class="person" id="twenty">
+					<img src="brand_assets/middle.png" alt="middle">
+					<h3>Средний</h3>
+					<h2>57%</h2>
+				</div>
+				<div class="person" id="thirty">
+					<img src="brand_assets/clever.png" alt="clever">
+					<h3>Высокий</h3>
+					<h2>42%</h2>
+				</div>
+			</div>
 		</div>
-		<div class="slide" id="gender">
-			<div class="stat_block">
-				<p>Мужчины</p>
-				<h2>47%</h2>
-			</div>
-			<img src="brand_assets/gender.png" alt="gender">
-			<div class="stat_block">
-				<p>Женщины</p>
-				<h2>53%</h2>
+	</div>
+
+	<div class="interest">
+		<div class="interest_container">
+			<p class="what">Чем интересуются Youtube пользователи?</p>
+			<div class="graphs">
+				<div class="graph one">
+					<h2 class="val">46%</h2>
+					<div class="fig">
+						<div class="main_part"></div>
+						<div class="shadow"></div>
+					</div>
+					<p class="descr">Музыка</p>
+				</div>
+				<div class="graph two">
+					<h2 class="val">34%</h2>
+					<div class="fig">
+						<div class="main_part"></div>
+						<div class="shadow"></div>
+					</div>
+					<p class="descr">Юмор</p>
+				</div>
+				<div class="graph three">
+					<h2 class="val">32%</h2>
+					<div class="fig">
+						<div class="main_part"></div>
+						<div class="shadow"></div>
+					</div>
+					<p class="descr">Сделай сам</p>
+				</div>
+				<div class="graph four">
+					<h2 class="val">22%</h2>
+					<div class="fig">
+						<div class="main_part"></div>
+						<div class="shadow"></div>
+					</div>
+					<p class="descr">Еда и рецепты</p>
+				</div>
+				<div class="graph five">
+					<h2 class="val">19%</h2>
+					<div class="fig">
+						<div class="main_part"></div>
+						<div class="shadow"></div>
+					</div>
+					<p class="descr">Мода и красота</p>
+				</div>
+				<div class="graph six">
+					<h2 class="val">19%</h2>
+					<div class="fig">
+						<div class="main_part"></div>
+						<div class="shadow"></div>
+					</div>
+					<p class="descr">Гаджеты и электроника</p>
+				</div>
+				<div class="graph seven">
+					<h2 class="val">19%</h2>
+					<div class="fig">
+						<div class="main_part"></div>
+						<div class="shadow"></div>
+					</div>
+					<p class="descr">Путешествия</p>
+				</div>
 			</div>
 		</div>
-		<div class="slide" id="age">
-			<div class="person" id="teen">
-				<img src="brand_assets/teen_usr.png" alt="teen">
-				<h3>18-24</h3>
-				<h2>22%</h2>
+	</div>
+
+	<div class="decision">
+		<h3 class="bg_nums">49</h3>
+		<h3 class="main_text"><span class="bold large">49%</span> пользователей находили на <span class="bold">YouTube</span> информацию, которая помогала им принять решение о покупке</h3>
+	</div>
+
+	<div class="offers">
+		<p class="what">Чем интересуются Youtube пользователи?</p>
+		<div class="blocks">
+			<div class="block">
+				<img src="brand_assets/advert.png" alt="advert">
+				<div class="text"><span class="bold">Видеореклама</span> -  вот это да, это же такой модный телевизионный формат. Ничего себе.</div>
+				<div class="text"><span class="bold">TrueView in-Stream</span> - если у вас есть история вы можете поделится ей с вашей аудиторией.</div>
 			</div>
-			<div class="person" id="twenty">
-				<img src="brand_assets/twenty_usr.png" alt="twenty">
-				<h3>25-34</h3>
-				<h2>35%</h2>
+			<div class="block">
+				<img src="brand_assets/influencer.png" alt="influencer">
+				<div class="text"><span class="bold">Лидеры мнений</span> - никому так не доверяют в интернете как своим любимчикам на YouTube.</div>
+				<div class="text"><span class="bold">PowerSuper</span> - наш неверотный инструмент который мы еще не придумали, но это будет просто бомба.</div>
 			</div>
-			<div class="person" id="thirty">
-				<img src="brand_assets/thirty_usr.png" alt="thirty">
-				<h3>35-44</h3>
-				<h2>20%</h2>
-			</div>
-			<div class="person" id="fourty">
-				<img src="brand_assets/fourty_usr.png" alt="fourty">
-				<h3>45-54</h3>
-				<h2>14%</h2>
-			</div>
-			<div class="person" id="fifty">
-				<img src="brand_assets/fifty_usr.png" alt="fifty">
-				<h3>55+</h3>
-				<h2>8%</h2>
-			</div>
-		</div>
-		<div class="slide" id="educ">
-			<div class="person" id="low">
-				<img src="brand_assets/low.png" alt="low">
-				<h3>Низкий</h3>
-				<h2>1%</h2>
-			</div>
-			<div class="person" id="twenty">
-				<img src="brand_assets/middle.png" alt="middle">
-				<h3>Средний</h3>
-				<h2>57%</h2>
-			</div>
-			<div class="person" id="thirty">
-				<img src="brand_assets/clever.png" alt="clever">
-				<h3>Высокий</h3>
-				<h2>42%</h2>
+			<div class="block">
+				<img src="brand_assets/tv.png" alt="tv">
+				<div class="text"><span class="bold">Канал Бренда</span> - самая крутотенюшка: иметь собственный канал бренда, на котором будет много подписчиков.</div>
+				<div class="text"><span class="bold">Производство</span> - никто кроме нас не освоил производство интернет-роликов.</div>
 			</div>
 		</div>
 	</div>
 
 
-	<div class="parallax-window" style="background: blue;">
+
 
 	</div>
 	<script src="assets/js/skrollr.js" ></script>
@@ -156,6 +246,7 @@
 	<script src="assets/js/odometer.js" ></script>
 	<script src="assets/js/jquery.waypoints.js" ></script>
 	<script src="assets/js/inview.js" ></script>
+	<script src="assets/slick/slick.min.js" ></script>
 	<script src="brand.js"></script>
 </body>
 </html>

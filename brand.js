@@ -16,8 +16,8 @@ function currentDiv(n) {
     b[n-1].className += " active_button";
 }
 
-
-function animation_timer() { //makes all rectangles not dissapear after animation
+//prevent red blocks from disapearring after initial animation
+function animation_timer() {
 	var i;
 	var r = document.getElementsByClassName("red_rect");
 
@@ -29,8 +29,8 @@ function animation_timer() { //makes all rectangles not dissapear after animatio
 
 setTimeout(animation_timer, 1000);
 
-var exec_type, exec_odo = false;
 
+//triggers for animation when a cetain div is reached
 var typing = new Waypoint.Inview({
 
 	element: $('.search_bar'),
@@ -39,14 +39,13 @@ var typing = new Waypoint.Inview({
 		$(function(){
 	      $(".fill_text").typed({
 	        strings: ["Вторая в мире поисковая система после Google"],
-	        typeSpeed: 30
+	        typeSpeed: 0
 	      		});
 
 	  	});
 
 	  	typing.destroy();
 	}
-
 });
 
 var anim_nums = new Waypoint.Inview({
@@ -60,9 +59,27 @@ var anim_nums = new Waypoint.Inview({
 
 	  	anim_nums.destroy();
 	}
-
 });
 
+//initialise parallax
 var s = skrollr.init();
+
+//initialise carousel
+$(document).ready(function(){
+      $('.users').slick({
+        draggable: false,
+        dots: true,
+        arrows: false,
+        speed: 1000,
+        infinite: false,
+        autoplay: true,
+  		autoplaySpeed: 1000,
+        cssEase: 'cubic-bezier(0,-0.01,.19,.9)',
+        customPaging: function(slider, i) {
+	      return '<div class="button_circle"></div>';
+	    }
+      });
+    });
+
 
 
