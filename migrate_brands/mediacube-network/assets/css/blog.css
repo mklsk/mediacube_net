@@ -1,0 +1,105 @@
+.page {
+
+	background: #F7F7F7;
+	padding-bottom: 0;
+}
+
+.blog-filters__list-item.__active .blog-filters__item {
+    background-color: #d42f27;
+}
+
+.blog-filters__item {
+
+    color: #000;
+}
+
+.blog-filters__item:hover, .blog-filters__item:focus {
+
+    background-color: rgba(105, 105, 105, 0.4);
+    color: #000;
+}
+
+.articles-list__figure-img {
+
+	-webkit-filter: none;
+	filter: none;
+	-webkit-filter: none;
+	filter: none;
+	filter: none;  
+}
+
+.main-heading__title {
+
+    letter-spacing: -14px;
+   }
+
+.articles-list__title a {
+    color: #000;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+.articles-list__item p {
+
+	font-weight: 400;
+    color: #000;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+.articles-list__item:hover {
+
+	background-color: #A9251F;
+}
+
+.articles-list__item-meta a{
+    color: #000;
+    border-bottom: solid 1px #000;
+    font-weight: 400;
+}
+
+.articles-list__figure {
+
+	-webkit-box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.42);
+	-moz-box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.42);
+	box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.42);
+}
+
+@media screen and (max-width: 730px) {
+	.main-heading__title strong {
+	    font: 400 160px/1 'GothamPro-Black', sans-serif;
+	}
+}
+
+@media screen and (max-width: 680px)
+{
+	.footer {
+		display: none;
+	}
+	.subscribe-blog {
+		margin-left: -10px;
+    	margin-right: -10px;
+	}
+}
+
+@media screen and (max-width: 450px)
+{
+	.main-heading__title strong {
+
+	    letter-spacing: -14px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.main-heading__title strong {
+	    font: 400 140px/1 'GothamPro-Black', sans-serif;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.main-heading__title strong {
+	    font: 400 130px/1 'GothamPro-Black', sans-serif;
+	}
+}
+
+

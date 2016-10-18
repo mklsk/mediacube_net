@@ -1,0 +1,203 @@
+{
+    "key": "group_567dadadc31d2",
+    "title": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b",
+    "fields": [
+        {
+            "key": "field_567daf68e78d4",
+            "label": "\u0426\u0432\u0435\u0442 \u0444\u043e\u043d\u0430",
+            "name": "bg_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#1F1F1F"
+        },
+        {
+            "key": "field_567daf6be78d5",
+            "label": "\u0424\u043e\u043d",
+            "name": "bg",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_56e0751fb2773",
+            "label": "\u0424\u043e\u043d (\u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439)",
+            "name": "bg_mobile",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_567dadadc6807",
+            "label": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b",
+            "name": "contacts",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "block",
+            "button_label": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c",
+            "sub_fields": [
+                {
+                    "key": "field_567dadadc78c5",
+                    "label": "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_567dadadc7960",
+                    "label": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                }
+            ]
+        },
+        {
+            "key": "field_567dae21ec196",
+            "label": "\u0427\u0435\u043c \u043c\u044b \u043c\u043e\u0436\u0435\u043c \u0432\u0430\u043c \u043f\u043e\u043c\u043e\u0447\u044c?",
+            "name": "options",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c",
+            "sub_fields": [
+                {
+                    "key": "field_567dae3aec197",
+                    "label": "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contacts.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1457550645
+}

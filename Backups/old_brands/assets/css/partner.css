@@ -1,0 +1,37 @@
+@media screen and (max-width: 900px) {
+
+	.main-heading__title strong {
+    	font: 400 140px/1 'GothamPro-Black', sans-serif;
+	}
+}
+
+@media screen and (max-width: 750px) {
+
+	.main-heading__title strong {
+    	font: 400 120px/1 'GothamPro-Black', sans-serif;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.main-heading__title strong {
+    	font: 400 90px/1 'GothamPro-Black', sans-serif;
+    	letter-spacing: -9px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.main-heading__title strong {
+    	font: 400 70px/1 'GothamPro-Black', sans-serif;
+    	letter-spacing: -7px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.main-heading__title strong {
+    	font: 400 60px/1 'GothamPro-Black', sans-serif;
+    	letter-spacing: -7px;
+	}
+}
