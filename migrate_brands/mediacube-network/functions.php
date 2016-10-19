@@ -1,5 +1,6 @@
 <?php
 
+
 define( 'IO_THEME_NAME', 'mediacube-network' );
 define( 'IO_THEME_URI', get_theme_root_uri() . '/' . IO_THEME_NAME . '/' );
 define( 'IO_THEME_ROOT', get_theme_root() . '/' . IO_THEME_NAME . '/' );
@@ -18,3 +19,6 @@ require_once 'components/menu.php';
 require_once 'components/queries.php';
 require_once 'components/theme_support.php';
 require_once 'components/thumbnails.php';
+
+
+

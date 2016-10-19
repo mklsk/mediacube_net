@@ -104,5 +104,18 @@
 <!-- // end SCRIPTS SECTION // -->
 <?php the_field('counters', 'options', false); ?>
 </div>
+
+<?php
+global $post;
+    global $post;
+    $post_slug=$post->post_name;
+    if ($post_slug == 'brands') : ?> <!-- connect scripts for brands page -->
+
+
+<link rel="stylesheet" href="http://mediacube.network/wp-content/themes/mediacube-network/assets/css/odometer-theme-my.css" />
+
+<?php endif;?>
+
+
 </body>
 </html>

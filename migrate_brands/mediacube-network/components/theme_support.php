@@ -31,6 +31,16 @@ function io_scripts_and_styles() {
 
         wp_register_script( 'mc-add', IO_THEME_URI . 'assets/js/mc-add.js', array(), '', true );
         wp_enqueue_script( 'mc-add' );
+
+
+        global $post;
+        $post_slug=$post->post_name;
+        if ($post_slug == 'brands') {
+
+        wp_register_script( 'brand', get_template_directory_uri() . '/assets/js/brand.js"', array(), '', true);
+        wp_enqueue_script( 'brand' );
+
+        }
     }
 }
 
