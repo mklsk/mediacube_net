@@ -2,6 +2,11 @@
 //don't WordPress
 if($_SERVER['REQUEST_URI']=='/brands/'):?>
 
+
+<div class="map_form"> 
+    
+</div>
+
 <div class="content">
     <h2 class="m-title"><?php _e('We will hear you!', IO_THEME_NAME); ?></h2>
 

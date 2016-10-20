@@ -37,7 +37,25 @@ function io_scripts_and_styles() {
         $post_slug=$post->post_name;
         if ($post_slug == 'brands') {
 
-        wp_register_script( 'brand', get_template_directory_uri() . '/assets/js/brand.js"', array(), '', true);
+        wp_register_script( 'typed', get_template_directory_uri() . '/assets/js/typed.js"', array('jquery'), '', true);
+        wp_enqueue_script( 'typed' );
+
+        wp_register_script( 'skrollr', get_template_directory_uri() . '/assets/js/skrollr.js"', array('jquery'), '', true);
+        wp_enqueue_script( 'skrollr' );
+
+        wp_register_script( 'odometer', get_template_directory_uri() . '/assets/js/odometer.js"', array('jquery'), '', true);
+        wp_enqueue_script( 'odometer' );
+
+        wp_register_script( 'waypoints', get_template_directory_uri() . '/assets/js/jquery.waypoints.js"', array('jquery'), '', true);
+        wp_enqueue_script( 'waypoints' );
+
+        wp_register_script( 'inview', get_template_directory_uri() . '/assets/js/inview.js"', array('jquery', 'waypoints'), '', true);
+        wp_enqueue_script( 'inview' );
+
+        wp_register_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js"', array('jquery' ), '', true);
+        wp_enqueue_script( 'slick' );
+
+         wp_register_script( 'brand', get_template_directory_uri() . '/assets/js/brand.js"', array('jquery', 'typed', 'skrollr', 'odometer', 'waypoints', 'inview', 'slick'), '', true);
         wp_enqueue_script( 'brand' );
 
         }
