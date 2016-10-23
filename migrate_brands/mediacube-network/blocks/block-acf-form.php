@@ -4,13 +4,20 @@ if($_SERVER['REQUEST_URI']=='/brands/'):?>
 
 
 <div class="map_form"> 
-    
-</div>
+    <div class="main-heading-contacts">
+        <ul class="main-heading-contacts__list">
+            <li class="main-heading-contacts__list-item">
+                <div class="main-heading-contacts__label">Брендам</div>
+                <div class="main-heading-contacts__text">
+                    <p>+375 44 7777554
+                    <br /> 
+                    <a href="mailto:">info@mediacube.network</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
 
-<div class="content">
-    <h2 class="m-title"><?php _e('We will hear you!', IO_THEME_NAME); ?></h2>
-
-    <form class="forms __type-contacts">
+        <form class="forms __type-contacts">
         <input type="hidden" name="type" value="contacts">
         <div class="forms__grid">
             <div class="forms__col-1">
@@ -32,24 +39,7 @@ if($_SERVER['REQUEST_URI']=='/brands/'):?>
                   <label for="phone" class="i-p__label"><span
                           class="i-p__label-content"><?php _e('Phone', IO_THEME_NAME); ?></span></label></span>
                 </div>
-            </div>
-            <div class="forms__col-2">
-                <div class="sel-outer">
-                    <select name="help" placeholder="<?php _e('How can we help you?', IO_THEME_NAME); ?>"
-                            class="cs-select cs-skin-underline">
-                        <option selected hidden disabled><?php _e('How can we help you?', IO_THEME_NAME); ?></option>
-                        <?php if (have_rows('options')): ?>
-                            <?php while (have_rows('options')): the_row(); ?>
-                                <option><?php the_sub_field('title') ?></option>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-						 <option>Сотрудничество с авторами</option>
-						 <option>Сотрудничество с брендами и агентствами</option>
-						 <option>Предложения по вакансиям</option>
-						 <option>Запрос на собеседование</option>
-						 <option>Вопрос о партнерстве</option>
-                    </select>
-                </div>
+
                 <div class="ta-outer">
                     <textarea name="message" placeholder="<?php _e('Message', IO_THEME_NAME); ?>"
                               class="t-a"></textarea>
@@ -64,9 +54,11 @@ if($_SERVER['REQUEST_URI']=='/brands/'):?>
                     <button class="btn btn-contact"><span class="text_button"><?php _e('Send', IO_THEME_NAME); ?></span>
                     </button>
                 </div>
+
             </div>
         </div>
     </form>
+    </div>  
 </div>
 
 <?endif;?>

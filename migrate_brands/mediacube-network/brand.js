@@ -1,20 +1,5 @@
-function currentDiv(n) {
-    var i;
-    var x = document.getElementsByClassName("slide");
-    var b = document.getElementsByClassName("button_circle");
-   
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
+console.log('7');
 
-    x[n-1].style.display = "flex"; 
-
-    for (i = 0; i < x.length; i++) {
-        b[i].className = "button_circle"; 
-    }    
-
-    b[n-1].className += " active_button";
-}
 
 //prevent red blocks from disapearring after initial animation
 function animation_timer() {
@@ -48,6 +33,8 @@ var typing = new Waypoint.Inview({
     }
 });
 
+
+//scrolling up numbers animation
 var anim_nums = new Waypoint.Inview({
 
     element: $('.content_sect'),
@@ -61,6 +48,45 @@ var anim_nums = new Waypoint.Inview({
     }
 });
 
+var anim_graphs = new Waypoint.Inview({
+
+    element: $(".graph.one .fig"),
+    enter: function(direction){
+
+        $(".graph.one .fig").animate({
+        height: '334px'
+        }, 900);
+
+        $(".graph.two .fig").animate({
+        height: '248px'
+        }, 900);
+
+        $(".graph.three .fig").animate({
+        height: '232px'
+        }, 900);
+
+        $(".graph.four .fig").animate({
+        height: '152px'
+        }, 900);
+
+        $(".graph.five .fig").animate({
+        height: '128px'
+        }, 900);
+
+        $(".graph.six .fig").animate({
+        height: '128px'
+        }, 900);
+
+        $(".graph.seven .fig").animate({
+        height: '128px'
+        }, 900);
+
+        anim_graphs.destroy();
+    }
+});
+
+
+
 //initialise parallax
 var s = skrollr.init();
 
@@ -72,7 +98,7 @@ $(document).ready(function(){
         arrows: false,
         speed: 1000,
         infinite: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 700,
         cssEase: 'cubic-bezier(0,-0.01,.19,.9)',
         customPaging: function(slider, i) {
@@ -84,4 +110,133 @@ $(document).ready(function(){
 
 
 
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+var slide_count;
+var first_arrival = true;
+var dir;
 
+function slides_down () {
+
+    slide_count = $('.users').slick('slickCurrentSlide');
+    console.log(slide_count);
+
+    if(slide_count < 2)
+    {
+        if(slide_count == 0 )
+        {
+            setTimeout(function() {
+                $('.users').slick('slickNext');
+            }, 2000);
+
+        }
+
+        else {
+
+             $('.users').slick('slickNext');
+        }
+    }
+
+    else
+    {
+        $('.users').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        restart_slides();
+        }); 
+    }
+}
+
+function slides_up () {
+
+    slide_count = $('.users').slick('slickCurrentSlide');
+    console.log(slide_count);
+
+    if(slide_count > 0)
+    {
+        if(slide_count == 2 )
+        {
+            setTimeout(function() {
+                $('.users').slick('slickPrev');
+            }, 2000);
+
+        }
+
+        else {
+
+             $('.users').slick('slickPrev');
+        }
+    }
+
+    else
+    {
+        $('.users').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        restart_slides();
+        }); 
+    }
+}
+
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false; 
+  console.log('direction is ' + dir);
+
+  if (dir == 'down')
+  {
+    slides_down();  
+  }
+  else
+  {
+    slides_up();
+  }
+  
+          
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+
+
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+
+
+}
+
+function enableScroll() {
+        
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null; 
+    window.onwheel = null; 
+    window.ontouchmove = null;  
+    document.onkeydown = null;  
+}
+
+
+function restart_slides() {
+
+    enableScroll();
+}
+
+
+// var slide_scroll = new Waypoint.Inview({
+//   element: $(".interest"),
+//   enter: function(direction) {
+    
+//     dir = direction;
+//     disableScroll();
+    
+//   }
+
+// });

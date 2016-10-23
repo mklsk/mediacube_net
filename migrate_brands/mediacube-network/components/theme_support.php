@@ -55,7 +55,10 @@ function io_scripts_and_styles() {
         wp_register_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js"', array('jquery' ), '', true);
         wp_enqueue_script( 'slick' );
 
-         wp_register_script( 'brand', get_template_directory_uri() . '/assets/js/brand.js"', array('jquery', 'typed', 'skrollr', 'odometer', 'waypoints', 'inview', 'slick'), '', true);
+        wp_register_script( 'scrollpath', get_template_directory_uri() . '/assets/js/jquery.scrollpath.js"', array('jquery' ), '', true);
+        wp_enqueue_script( 'scrollpath' );
+
+         wp_register_script( 'brand', get_template_directory_uri() . '/assets/js/brand.js"', array('jquery', 'typed', 'skrollr', 'odometer', 'waypoints', 'inview', 'slick', 'scrollpath'), '', true);
         wp_enqueue_script( 'brand' );
 
         }

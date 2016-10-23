@@ -108,8 +108,6 @@ p {
     }
     50% {
         transform: scale(1.1);
-
-
     }
     100% {
         transform: scale(1);
@@ -733,6 +731,7 @@ p {
 	justify-content: space-between;
 	margin: 30px 10% 0;
 	align-items: flex-end;
+	min-height: 516px;
 }
 
 .graph .val {
@@ -764,23 +763,23 @@ p {
 }
 
 .graph.one .fig {
-	height: 344px;
+	height: 0;
 }
 
 .graph.two .fig {
-	height: 248px;
+	height: 0px;
 }
 
 .graph.three .fig {
-	height: 232px;
+	height: 0px;
 }
 
 .graph.four .fig {
-	height: 152px;
+	height: 0px;
 }
 
 .graph.five .fig, .graph.six .fig, .graph.seven .fig {
-	height: 128px;
+	height: 0px;
 }
 
 .graph.one, .graph.two, .graph.three, .graph.seven {
@@ -829,7 +828,7 @@ p {
 }
 
 .offers {
-	height: 800px;
+	height: 830px;
 	position: relative;
 	z-index: 1;
 }
@@ -897,8 +896,11 @@ p {
 
 .map_form {
 
-	height: 700px;
-	background-image: url(../img/big_map.jpg)
+	height: 770px;
+	background-image: url(../img/big_map.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 
@@ -907,6 +909,60 @@ p {
 	margin-top: 0;
 }
 
+.main-heading-contacts {
+	position: relative;
+	top: 50px;
+}
+
+.main-heading-contacts__text p {
+    color: #7e8084;
+    font-size: 18px;
+}
+
+.main-heading-contacts__label {
+	color: #fff;
+}
+
+.forms.__type-brands .form-group, .forms.__type-contacts .form-group {
+    margin-bottom: 30px;
+}
+
+.forms.__type-brands .forms__col-1, .forms.__type-contacts .forms__col-1 {
+    padding-right: 0;
+    padding-top: 10px;
+
+}
+.forms__col-1 {
+    float: left;
+    width: 100%;
+}
+
+.forms__grid {
+    padding-top: 0;
+}
+
+
+.forms .t-a {
+    min-height: 140px;
+}
+
+.forms .ta-outer {
+    top: 20px;
+}
+
+.forms.__type-brands .forms__actions, .forms.__type-contacts .forms__actions {
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-heading-contacts {
+    padding: 30px 90px 30px 90px;
+}
+
+.anim_graph {
+
+}
 
 @media screen and (max-width: 1350px) {
 
