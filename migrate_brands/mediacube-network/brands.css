@@ -449,7 +449,6 @@ p {
 	height: 480px;
 	color: #666666;
 	position: relative;
-	padding-right: 50px;
 	overflow-y: hidden;
 
 }
@@ -490,7 +489,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	margin: 60px 0 auto;
+	margin: 30px 0 auto;
 	font-family: GothamPro;
 }
 
@@ -589,7 +588,7 @@ p {
 
 #fifty {
 
-	padding-right: 70px;
+	padding-right: 10%;
 }
 
 .person h3 {
@@ -893,7 +892,6 @@ p {
     background-color: #1F1F1F;
 }
 
-
 .map_form {
 
 	height: 770px;
@@ -902,7 +900,6 @@ p {
     background-repeat: no-repeat;
     background-position: 50%;
 }
-
 
 .content {
 
@@ -960,9 +957,50 @@ p {
     padding: 30px 90px 30px 90px;
 }
 
-.anim_graph {
 
+.fa-chevron-circle-right, .fa-chevron-circle-left {
+
+	font-size: 100px;
+	position: absolute;
+	top: 203px;
+	color: #c6c6c6;
+	z-index: 1;
+	-webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    cursor: pointer;
+    -ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
 }
+
+.fa-chevron-circle-right {
+
+	right: 50px;
+} 
+
+.fa-chevron-circle-left {
+
+	left: 50px;
+}
+
+.fa-chevron-circle-right:hover, .fa-chevron-circle-left:hover {
+	color: #b2b2b2 ! important;
+}
+
+@-webkit-keyframes pulsate {
+
+    0% {-webkit-transform: scale(1, 1)}
+    50% {-webkit-transform: scale(1.1, 1.1)}
+    100% {-webkit-transform: scale(1, 1)}
+}
+
+
+
+#teen {
+	padding-left: 10%
+}
+
 
 @media screen and (max-width: 1350px) {
 
@@ -982,5 +1020,4 @@ p {
 	}
 
 }
-
 

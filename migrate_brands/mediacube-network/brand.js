@@ -1,4 +1,4 @@
-console.log('7');
+console.log('15');
 
 
 //prevent red blocks from disapearring after initial animation
@@ -85,29 +85,27 @@ var anim_graphs = new Waypoint.Inview({
     }
 });
 
-
-
 //initialise parallax
 var s = skrollr.init();
 
 //initialise carousel
 $(document).ready(function(){
-      $('.users').slick({
+    $('.users').slick({
         draggable: false,
-        dots: true,
+        dots: false,
         arrows: false,
         speed: 1000,
         infinite: false,
         autoplay: false,
         autoplaySpeed: 700,
-        cssEase: 'cubic-bezier(0,-0.01,.19,.9)',
         customPaging: function(slider, i) {
           return '<div class="button_circle"></div>';
         }
-      });
     });
 
-
+    $( "#prev_slick" ).css( "visibility", "hidden" );    
+    
+});
 
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
@@ -115,128 +113,39 @@ var slide_count;
 var first_arrival = true;
 var dir;
 
-function slides_down () {
 
-    slide_count = $('.users').slick('slickCurrentSlide');
-    console.log(slide_count);
+$('#next_slick').click( function() {
 
-    if(slide_count < 2)
+    $('.users').slick('slickNext');
+});
+
+$('#prev_slick').click( function() {
+
+    $('.users').slick('slickPrev');
+});
+
+$('.users').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+
+    var slide = $('.users').slick('slickCurrentSlide');
+
+    console.log( slide );
+
+     if(slide == 0)
     {
-        if(slide_count == 0 )
-        {
-            setTimeout(function() {
-                $('.users').slick('slickNext');
-            }, 2000);
-
-        }
-
-        else {
-
-             $('.users').slick('slickNext');
-        }
+        $( "#prev_slick" ).css( "visibility", "hidden" );     
     }
-
-    else
+    else 
     {
-        $('.users').on('afterChange', function(event, slick, currentSlide, nextSlide){
-        restart_slides();
-        }); 
+        $( "#prev_slick" ).css( "visibility", "visible" );        
     }
-}
 
-function slides_up () {
-
-    slide_count = $('.users').slick('slickCurrentSlide');
-    console.log(slide_count);
-
-    if(slide_count > 0)
+    if(slide == 2)
     {
-        if(slide_count == 2 )
-        {
-            setTimeout(function() {
-                $('.users').slick('slickPrev');
-            }, 2000);
-
-        }
-
-        else {
-
-             $('.users').slick('slickPrev');
-        }
+        $( "#next_slick" ).css( "visibility", "hidden" );   
     }
-
-    else
+    else 
     {
-        $('.users').on('afterChange', function(event, slick, currentSlide, nextSlide){
-        restart_slides();
-        }); 
+        $( "#next_slick" ).css( "visibility", "visible" );      
     }
-}
-
-
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-      e.preventDefault();
-  e.returnValue = false; 
-  console.log('direction is ' + dir);
-
-  if (dir == 'down')
-  {
-    slides_down();  
-  }
-  else
-  {
-    slides_up();
-  }
-  
-          
-}
-
-function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-    }
-}
-
-function disableScroll() {
-
-
-  if (window.addEventListener) // older FF
-      window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-  document.onkeydown  = preventDefaultForScrollKeys;
-
-
-}
-
-function enableScroll() {
         
-    if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
-}
-
-
-function restart_slides() {
-
-    enableScroll();
-}
-
-
-// var slide_scroll = new Waypoint.Inview({
-//   element: $(".interest"),
-//   enter: function(direction) {
-    
-//     dir = direction;
-//     disableScroll();
-    
-//   }
-
-// });
+});

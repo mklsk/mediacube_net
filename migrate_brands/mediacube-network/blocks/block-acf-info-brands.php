@@ -1,9 +1,10 @@
 
-    
+     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/brands.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/slick/slick-my.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/odometer-theme-my.css">
+   
 
     <div class="red_blocks">
         <div class="center_content">
@@ -79,8 +80,12 @@
     
     <div class="users_sect">
     <p class="who">Кто они, пользователи Youtube?</p>
-        <div class="users">
+  
+    <i class="fa fa-chevron-circle-right" id="next_slick" aria-hidden="true"></i>
+    <i class="fa fa-chevron-circle-left" id="prev_slick" aria-hidden="true"></i>
 
+        <div class="users">
+    
             <div class="slide" id="gender">
                 <div class="stat_block" id="men">
                     <p>Мужчины</p>
