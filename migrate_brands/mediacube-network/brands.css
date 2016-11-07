@@ -817,7 +817,6 @@ p {
 }
 
 .offers {
-    height: 830px;
     position: relative;
     z-index: 1;
 }
@@ -831,7 +830,7 @@ p {
 .offers .blocks {
     display: flex;
     justify-content: space-between;
-    margin: 60px 10% 90px;
+    margin: 60px 10% 0;
     font-style: italic;
     font-family: GothamPro-Light;
 }
@@ -857,7 +856,7 @@ p {
 }
 
 .offers .block .text {
-    font-size: 29px;
+    font-size: 25px;
     margin-bottom: 45px;
     line-height: 1.1em;
 }
@@ -1150,9 +1149,6 @@ p {
     p {
         font-size: 20px;
     }
-    .offers {
-        height: 900px;
-    }
     .red_rect.fifteen {
         width: 14%;
         bottom: 140px;
@@ -1175,11 +1171,8 @@ p {
     .offers .block .text {
         font-size: 25px;
     }
-    .offers {
-        height: 850px;
-    }
     .offers .blocks {
-        margin: 60px 5% 90px;
+        margin: 60px 5% 0;
     }
     .content_sect p {
         font-size: 25px;
@@ -1203,6 +1196,25 @@ p {
 @media screen and (max-width: 1230px) {
     .decision .main_text {
         margin-top: 180px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .users {
+        height: 400px;
+    }
+    #gender {
+        margin-top: 10px;
+    }
+    #age,
+    #educ {
+        margin-top: 0;
+        position: relative;
+        bottom: 20px;
+    }
+    .fa-chevron-circle-right,
+    .fa-chevron-circle-left {
+        top: 123px;
     }
 }
 
@@ -1265,6 +1277,12 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
+
+	.blocks {
+		flex-direction: column;
+		align-items: center;
+	}
+
     .main-heading-contacts {
         width: 620px;
         height: 730px;
@@ -1311,21 +1329,15 @@ p {
         margin-top: 0px;
     }
     .users {
-        height: 400px;
+        height: 350px;
     }
     .fa-chevron-circle-right,
     .fa-chevron-circle-left {
         top: 130px;
     }
-    .offers {
-        height: 800px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
-    .offers {
-        height: 900px;
-    }
     #ads {
         width: 215px;
     }
@@ -1347,6 +1359,9 @@ p {
     .red_rect.nine {
         width: 14%;
         bottom: 30px;
+    }
+    .person {
+        transform: scale(0.9);
     }
 }
 
@@ -1471,6 +1486,24 @@ p {
         width: 15%;
         bottom: 80px;
     }
+    .users {
+    	height: 300px;
+    }
+    .fa-chevron-circle-right, .fa-chevron-circle-left {
+    top: 100px;
+	}
+	#gender {
+		    position: relative;
+    	bottom: 30px;
+
+	}	
+	#age, #educ {
+		bottom: 60px
+	}
+	.search {
+		height: 350px;
+	}
+
 }
 
 @media screen and (max-width: 830px) {
@@ -1480,20 +1513,17 @@ p {
     .content_search {
         transform: scale(0.8)
     }
-    .offers {
-        height: 950px;
-    }
     .sect.three .content_sect p {
         width: 160px;
+    }
+    .person {
+        transform: scale(0.8);
     }
 }
 
 @media screen and (max-width: 800px) {
     .img_text img {
         width: 244px;
-    }
-    #age {
-        transform: scale(0.75);
     }
     .red_blacks {
         height: 600px;
@@ -1508,8 +1538,8 @@ p {
         width: 11px;
     }
     .red_rect.two {
-    top: 30px;
-	}
+        top: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1521,15 +1551,10 @@ p {
     .red_rect.five {
         top: 50px;
     }
-
     .red_rect.nine {
-    width: 17%;
-	 }
-
-	 .red_rect.eight {
- 
-    left: 24%;
-	}
-
-
+        width: 17%;
+    }
+    .red_rect.eight {
+        left: 24%;
+    }
 }
