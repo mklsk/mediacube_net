@@ -82,7 +82,9 @@
 
     
     <div class="users_sect">
-        <p class="who">Кто они, пользователи Youtube?</p>
+        <p class="who one" >Кто они, пользователи Youtube?</p>
+        <p class="who two">Каков возраст зрителей?</p>
+        <p class="wh three">Каков уровень образованности?</p>
       
         <i class="fa fa-chevron-circle-right" id="next_slick" aria-hidden="true"></i>
         <i class="fa fa-chevron-circle-left" id="prev_slick" aria-hidden="true"></i>
