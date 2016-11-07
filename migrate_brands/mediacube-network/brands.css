@@ -74,11 +74,16 @@ p {
 .red_rect {
     background-color: #e91531;
     position: absolute;
-    animation-name: block_fly;
+    transform: scale(0);
+}
+
+.animated {
+
+	animation-name: block_fly;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 1s;
-    transform: scale(0);
+
 }
 
 .red_rect:before {
