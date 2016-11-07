@@ -1,4 +1,6 @@
-console.log('16');
+
+    console.log('im ready')
+
 
 var isMobile = false; //initiate as false
 // device detection
@@ -130,13 +132,39 @@ $('#prev_slick').click( function() {
     $('.users').slick('slickPrev');
 });
 
+function dynam_label(ind) {
+
+    $( ".who" ).css( "display", "none" );  
+
+    switch (ind) {
+
+        case 0: 
+            $( ".who.one" ).css( "display", "block" );
+            break;  
+
+        case 1: 
+            $( ".who.two" ).css( "display", "block" );  
+            break;
+
+        case 2: 
+            $( ".who.three" ).css( "display", "block" );  
+            break;      
+
+
+    }
+
+}
+
 $('.users').on('afterChange', function(event, slick, currentSlide, nextSlide) {
 
     var slide = $('.users').slick('slickCurrentSlide');
+    dynam_label(slide);
+
 
      if(slide == 0)
     {
-        $( "#prev_slick" ).css( "visibility", "hidden" );     
+        $( "#prev_slick" ).css( "visibility", "hidden" );  
+
     }
     else 
     {

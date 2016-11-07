@@ -452,10 +452,11 @@ p {
     position: absolute;
     left: 10%;
     top: -80px;
-    display: none;
 }
 
-
+.who.two, .who.three {
+	display: none;
+}
 
 .button_circle {
     width: 24px;

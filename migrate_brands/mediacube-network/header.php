@@ -12,7 +12,7 @@
 
     <?php wp_head(); ?>
 </head>
-<body
+<body 
     <?php if ( is_home() ) : ?>
     class="type-blog-page"
     <?php elseif ( is_page_template('page-main.php') or is_front_page() ) : ?>
